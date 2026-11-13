@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\huffman.obj",
+            "outputs": [
+                "x64\\Debug\\huffman.cpp.obj.dt.module.json",
+                "x64\\Debug\\huffman.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
