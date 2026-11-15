@@ -2,10 +2,29 @@
 //
 
 #include <iostream>
+#include <fstream> //read & write
+
+//Betero -- using namespace to isolate what I added. Are we doing "using directive" or not?
+using namespace std;
 
 int main()
 {
+    if (argc < 2)
+    {
+        std::cerr << "Missing input file. Try again" << std::endl;
+        return 1;
+    }
+
+    std::ifstream input(argv[1], ios::in | ios::binary);
+
+    if (!input)
+    {
+        cerr << "Cannot open input file." << endl;
+    }
+    
     std::cout << "Hello World!\n";
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
